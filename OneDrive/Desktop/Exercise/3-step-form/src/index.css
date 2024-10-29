@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.main-title{
+  margin-bottom: 5rem;
+  background-color: rgb(55, 55, 135);
+  margin-top: 0;
+  height:5rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  color: white;
+}
+
+.step-container{
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(245, 239, 239);
+  width: 30%;
+  margin-top: 5rem;
+  gap: 2.5rem;
+  padding-bottom: 3rem;
+  padding-top: 3rem;
+
+}
+
+.step-container input{
+  width: 60%;
+  height: 2rem;
+}
+
+.step-container button, .done-btn{
+  background-color:rgb(55, 55, 135) ;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem;
+  font-size: 1rem;
+  color: white;
+
+}
+
+.step-container button:hover, .done-btn:hover{
+  background-color: rgb(9, 9, 116);
+  cursor: pointer;
+}
+
+.btn-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 4rem;
+}
+
+.completed-form{
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(245, 239, 239);
+  margin: auto;
+  width: 30%;
+  gap:2rem;
+}
+
+.completed-form h2{
+  margin:auto;
+}
+
+.completed-form-step{
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  border-bottom: gray solid;
+}
+
+.done-btn{
+  width: 50%;
+  margin: auto;
+}
