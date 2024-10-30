@@ -45,7 +45,10 @@ function useForm() {
     setCurrentStep((prev) => prev<3 ? prev+1: 3)
   }
 
-  const prevStep = () => setCurrentStep((prev) => prev >1 ? prev-1 : 1);
+  const prevStep = () =>{
+    localStorage.setItem('currentStep', currentStep - 1);
+    setCurrentStep((prev) => prev >1 ? prev-1 : 1);
+  } 
 
   const submitForm = () => {
     localStorage.setItem(`step${currentStep}`, JSON.stringify(data[`step${currentStep}`]));
